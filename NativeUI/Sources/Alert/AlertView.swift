@@ -61,10 +61,18 @@ final class AlertView: UIView {
         return label
     }()
     
-    private lazy var messageLabel: UILabel = {
-        let label = UILabel()
+    private lazy var messageLabel: UITextView = {
+        let label = UITextView()
+        label.isScrollEnabled = false
+        label.backgroundColor = .clear
+        label.textAlignment = .center
+        label.isEditable = false
+        label.dataDetectorTypes = .link
+        label.linkTextAttributes = [
+            .foregroundColor: UIColor.systemGray,
+            .underlineStyle: NSUnderlineStyle.single.rawValue
+        ]
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 0
         return label
     }()
     
