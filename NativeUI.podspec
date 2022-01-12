@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "NativeUI"
-  s.version       = "1.2.1"
+  s.version       = "1.2.2"
   s.summary       = "Library that includes customizable replacements for native UIKit components"
 
   s.description   = <<-DESC
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                       but customizable and were implemented from scratch.
                       DESC
 
-  s.homepage      = "https://github.com/AntonPoltoratskyi/NativeUI"
+  s.homepage      = "https://github.com/elegion/NativeUI"
   s.license       = { :type => "MIT", :file => "LICENSE" }
   s.author        = "Anton Poltoratskyi"
 
